@@ -1,0 +1,20 @@
+/*
+
+1- driver.getWindowHandle():
+	driver.getWindowHandle():
+Seleniım webDriver ile açılan her window'a Selenıum benzersiz bir handle degeri verir.
+Bu method'lar açık sayfa veya sayfaların window handle degerlerını bize getirir.
+2- Selenium webDriver ile birden fazla sayfa açılabilir,
+ ihtiyaç oldugunda bu window'lar arasında geçiş yapmamız gerekebilir
+3- Selenium'da iki durumda yenş window açılabilir
+	1-driver.SwitchTo.newWindow diyerek kontrollü bir yeni window açabiliriz
+	bu durumda driver'ımız da otomatik olarak yeni açılan window'a geçer
+	2-İkinci ihtimal ise test sırasında click yaptıgımız bir link otomatik olarak yeni birsayfa
+	açabilir.Bu durumda driver'in yeni sayfaya geçebilmesi için yeni sayfanın window handle değerini bilmemiz
+	gerekir
+4- Otomatik açılan ikinci window'un handle değerini bulabilmek için
+	*ilk sayfada iken o sayfanın window handle degerini alıp kaydedin
+	*ikinci sayfa açıldıktan sonra iki sayfanın window handle degerlerini bir set olarak kaydedin
+	*Set'deki iki window handle değerinden ilk sayfanın window handle degerine eşit olmayan
+	ikinci sayfanın window handle değeri olacaktır
+*/
